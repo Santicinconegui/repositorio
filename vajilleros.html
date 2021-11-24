@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="podras encontrar varios muebles para cualquier parte de tu casa o tu oficina">
+    <meta name="keywords" content="mesas, sillas, escritorios, diseños exclusivos">
+<!-- titulo -->
+ <title>Catalogo-Muebles</title> 
+ <!-- titulo -->
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<!-- fonts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<!-- CSS -->  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css"> 
+<!--CSS-->
+</head>
+<body>
+   <div> <header class="animate__animated animate__backInDown header__align--color">-Uma|Interiores-</header></div>
+        <!-- menu -->
+        <div class="menuBar--color">         
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Sobre-nosotros.html"> Sobre Nosotros</a></li>       
+                <li><a href="catalogo.html">Catalogo</a></li>
+                <li><a href="equipo-de-trabajo.html">Equipo de Trabajo</a></li>
+                <li><a href="contactos.html">Contactos</a></li>    
+            </ul>            
+        </div>                      
+    
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+        <div class="side-bar">
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            
+            <div class="menu">
+                <div class="item">
+                    <a class="sub-btn">Home Office<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="escritorios.html" class="sub-item">Escritorios</a>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn">Living<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="mesa-aux.html" class="sub-item">Mesa Auxiliar</a>
+                        <a href="mesa-baja.html" class="sub-item">Mesa baja</a>
+                        <a href="sofas.html" class="sub-item">Sofas</a>
+                        <a href="butacones.html" class="sub-item">Butacones</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn">Comedor<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="mesa-comedor.html" class="sub-item">Mesa de comedor</a>
+                        <a href="taburetes.html" class="sub-item">Taburetes</a>
+                        <a href="sillas.html" class="sub-item">Sillas</a>
+                        <a href="vajilleros.html" class="sub-item">vajillero</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a class="sub-btn">Habitación<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="cabezales.html" class="sub-item">Cabezales</a>
+                        <a href="mesa-noche.html" class="sub-item">Mesas de noche</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+                    
+                
+
+
+<!-- script -->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+//jquery para sub menu//
+$('.sub-btn').click(function(){
+    $(this).next('.sub-menu').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
+    });
+
+    //jquery expand menu//
+
+
+    $('.menu-btn').click(function(){
+        
+        $('side-bar').addClass ('active');
+    });
+    $('.close-btn').click(function(){
+        $('side-bar').removeClass('active');
+    });
+});
+</script>
+
+
+
+<!-- script -->
+
+
+</body>
+</html>

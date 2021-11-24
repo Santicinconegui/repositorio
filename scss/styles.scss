@@ -1,0 +1,388 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /*body*/
+  
+  body {
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: url(https://www.teknofilo.com/wp-content/uploads/2017/01/Minimalist-smartphone-wallpapers_021.jpg);
+  }
+/*menu*/  
+  .menuBar--color {   
+    background-color: #808080; 
+    background-image: linear-gradient(to left, #fff, #000);   
+    ul {      
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+      list-style: none;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+  
+      li {
+        width: 120px;
+        margin: 15px;
+        padding: 12px;
+  
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+  
+        &:hover {
+          background-color: #000;
+          border-radius: 10px 50px / 50px;
+          transition: all 0.4s ease;
+        }
+      }
+    }
+  }  
+  /* fin del menu */
+  /* Footer */
+  
+  .Footer {
+    margin-top: 250px;
+    left: 10px;
+    bottom: 5px;
+    right: 10px;
+    width: 100%;
+    background-color: #808080;
+    opacity: 0.7;
+    color: #fff;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+  }
+  
+  /* fin del footer */
+  
+  .header__align--color {
+    /*header*/
+    background-color: #808080;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', serif;   
+    background-image: linear-gradient(to left, #000, #fff);
+  }
+  
+  /*fin del header*/
+  
+
+  
+  span {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .pLiving {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  h5 {
+    color: #000;
+  } 
+  .formArchivo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  .formArchivo, button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+  }
+  }
+  
+  .bodyET {
+    background-image: url(https://www.teknofilo.com/wp-content/uploads/2017/01/Minimalist-smartphone-wallpapers_021.jpg);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .gridConteiner__align {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    
+  
+    div {
+      color:#000;
+    }
+  }
+  
+  .profesionales {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .divET {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 70vh;
+    
+  }
+  
+  .gridMap--align {
+   
+    display: grid;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/54ec0fb3e4b0dc5d50410043/1570033416808-RD4GP44M53626GKNGTHY/fotografia-profesional-interiores-sala-comedor-apartamento-zarzamora.jpg?format=2500w);
+    grid-template-columns: 65% 35%;
+  
+    .asesoramiento, h2{
+      margin-left: 80px;
+    }
+    .asesoramiento, h2 p span{       
+        background-color: #808080;
+        opacity: 0.7;
+    }
+  
+    div {         
+      font-size: 20px;
+      line-height: 50px;
+      justify-content: right;
+      font-family: 'Cinzel', serif;
+      
+    }
+  }
+.iframe--size{
+  height: 500px;
+  width: 500px;
+}
+  .divGm {
+    border-style: solid;
+  }
+.containerGrid{
+  background-color: #808080;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "living comedor"
+      "living2 dormitorio";
+  
+  
+  .living { grid-area: living; }
+  
+  .comedor { grid-area: comedor; }
+  
+  .living2 { grid-area: living2; }
+  
+  .dormitorio { grid-area: dormitorio; }
+    
+    .container__img{
+      height: 700px;
+      width: 100% ;
+    }}
+ 
+  .SobreNosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    font-size: 25px;
+    font-family: 'Andada Pro', serif;
+    margin-top: 25px;
+    line-height: 0.8;
+  }
+  
+  .divTrabajo__align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  .divTrabajo_img{
+    height:500px;
+  }
+  }
+  
+  .clientes {
+    background-color: #808080;
+    opacity: 0.8;
+    font-size: 20px;
+    color: #000;
+    padding: 20px;
+    font-family: "Andada Pro", serif;
+    margin-top: 30px;
+    margin-right: 1000px;
+    margin-left: 200px;
+  }
+  
+  .gridContact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    div {
+      iframe {
+        margin-top: 150px;
+        margin-left: 150px;
+        height: 600px;
+        width: 650px;
+      }
+  
+      h1 {
+        font-size: 45px;
+        font-family: 'Noto Sans SC', sans-serif;
+        text-decoration: solid;
+        text-align: center;
+        margin-top: 100px;
+        margin-right: 50px;
+        padding: 20px;
+      }
+    }
+  }
+  
+  .spanContact {
+    font-family: 'Noto Sans SC', sans-serif;
+    margin-left: 120px;
+  }
+  
+  .formContact {
+    margin-top: 50px;
+    margin-right: 200px;
+  }
+  
+  .divButton {
+    padding: 20px;
+  }
+  
+  .textSub {
+    font-family: font-family "Raleway", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 60px;
+    padding: 50px;
+    line-height: 30px;
+  }
+  
+  .anuncio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 50px;
+  }
+  
+  .suscripcion {
+    padding: 20px;
+    color: #808080;
+  
+    .suscripcion:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  
+  .side-bar {
+    background: #fff;
+    opacity: 0.5;
+    backdrop-filter: blur(15px);
+    width: 290px ;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: auto ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+  
+    .menu {
+      width: 100%;
+      margin-top: 80px;
+  
+      .item {
+        position: relative;
+        cursor: pointer;
+  
+        a {
+          color: #000;
+          text-decoration: none;
+          display: block;
+          padding: 20px 30px;
+          line-height: 60px;
+  
+          &:hover {
+            background: #808080;
+            transition: 0.3s ease;
+          }
+  
+          .dropdown {
+            position: absolute;
+            right: 0;
+            margin: 20px;
+            transition: 0.3s ease;
+          }
+        }
+  
+        .sub-menu {
+          background: #fff;
+          display: none;
+  
+          a {
+            padding-left: 80px;
+          }
+        }
+      }
+    }
+  }
+  
+  .rotate {
+    transform: rotate(90deg);
+  }
+  
+  .close-btn {
+    position: absolute;
+    color: #000;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+  }
+  
+  .menu-btn {
+    position: absolute;
+    color: #000;
+    font-size: 20px;
+    margin: 25px;
+    cursor: pointer;
+  }
+  
+  .fb {
+    width: 20px;
+    height: 30px;
+  }
+  
+  .tw, .ig {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .redes--align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+  }
+
+// responsive// 
+@media (max-width: 767.98px){
+  .SobreNosotros {
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Andada Pro', serif;   
+    line-height: 0.5;
+ 
+  }
+  
+}
+ 
+
+//responsive//
+
