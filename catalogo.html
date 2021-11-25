@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 <!-- fonts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 <!-- CSS -->  
@@ -34,82 +35,86 @@
                 <li><a href="contactos.html">Contactos</a></li>    
             </ul>            
         </div>                      
+
+<div class="catalogoEstilo">
     
-    <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
-        <div class="side-bar">
-            <div class="close-btn">
-                <i class="fas fa-times"></i>
-            </div>
-            
-            <div class="menu">
-                <div class="item">
-                    <a class="sub-btn">Home Office<i class="fas fa-angle-right dropdown"></i></a>
-                    <div class="sub-menu">
-                        <a href="escritorios.html" class="sub-item">Escritorios</a>
-                        
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="sub-btn">Living<i class="fas fa-angle-right dropdown"></i></a>
-                    <div class="sub-menu">
-                        <a href="mesa-aux.html" class="sub-item">Mesa Auxiliar</a>
-                        <a href="mesa-baja.html" class="sub-item">Mesa baja</a>
-                        <a href="sofas.html" class="sub-item">Sofas</a>
-                        <a href="butacones.html" class="sub-item">Butacones</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="sub-btn">Comedor<i class="fas fa-angle-right dropdown"></i></a>
-                    <div class="sub-menu">
-                        <a href="mesa-comedor.html" class="sub-item">Mesa de comedor</a>
-                        <a href="taburetes.html" class="sub-item">Taburetes</a>
-                        <a href="sillas.html" class="sub-item">Sillas</a>
-                        <a href="vajilleros.html" class="sub-item">vajillero</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="sub-btn">Habitación<i class="fas fa-angle-right dropdown"></i></a>
-                    <div class="sub-menu">
-                        <a href="cabezales.html" class="sub-item">Cabezales</a>
-                        <a href="mesa-noche.html" class="sub-item">Mesas de noche</a>
-                    </div>
-                </div>
-            </div>
-        </div>    
-                    
-                
+    <ul>
+        <li><strong>Elegí</strong></li>
+        <li>Color</li>
+        <li>Terminación</li>
+        <li>Medidas</li>
+        <li>Estilo</li>
+    </ul> 
 
+    <div class="slideshow-container">
 
-<!-- script -->
-
-
-<script type="text/javascript">
-$(document).ready(function(){
-//jquery para sub menu//
-$('.sub-btn').click(function(){
-    $(this).next('.sub-menu').slideToggle();
-    $(this).find('.dropdown').toggleClass('rotate');
-    });
-
-    //jquery expand menu//
-
-
-    $('.menu-btn').click(function(){
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="img/Screenshot_3.png" class="carousel__img">
+          <div class="text">Estilo</div>
+        </div>
         
-        $('side-bar').addClass ('active');
-    });
-    $('.close-btn').click(function(){
-        $('side-bar').removeClass('active');
-    });
-});
-</script>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="img/Screenshot_4.png" class="carousel__img">
+          <div class="text">Terminación</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="img/Screenshot_2.png" class="carousel__img">
+          <div class="text">Color</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/Screenshot_5.png" class="carousel__img">
+            <div class="text">Medidas</div>
+          </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>               
+</div>  
 
 
 
-<!-- script -->
 
+<footer>    <!--inicio del footer-->
+         
+    <div class="Footer">2021 - Uma Interiores © Todos los derechos reservados.</div>
+        
+</footer>    <!--fin del footer-->
 
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 </body>
 </html>
