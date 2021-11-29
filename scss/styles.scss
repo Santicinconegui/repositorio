@@ -417,3 +417,27 @@ ul li strong{
   }
 }
 
+.gallery__img{
+  width: 100%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.gallery__img:hover{
+  transform: scale(1.02);
+ 
+}
+.rowGaleria{
+  display: flex;
+  padding: 2px;
+  flex-wrap: wrap;
+.columnGaleria{
+  flex: 25%;
+  padding: 2px;
+}
+}
+
+@media (max-width:600px){
+  .columnGaleria{
+    flex: 100%;
+  }
+}

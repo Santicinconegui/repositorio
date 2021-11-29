@@ -358,3 +358,23 @@ h5 {
 @media only screen and (max-width: 300px) {
   .prev, .next, .text {
     font-size: 11px; } }
+
+.gallery__img {
+  width: 100%;
+  margin-top: 5px;
+  cursor: pointer; }
+
+.gallery__img:hover {
+  transform: scale(1.02); }
+
+.rowGaleria {
+  display: flex;
+  padding: 2px;
+  flex-wrap: wrap; }
+  .rowGaleria .columnGaleria {
+    flex: 25%;
+    padding: 2px; }
+
+@media (max-width: 600px) {
+  .columnGaleria {
+    flex: 100%; } }
