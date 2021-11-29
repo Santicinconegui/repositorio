@@ -3,13 +3,18 @@
   margin: 0;
   box-sizing: border-box; }
 
-/*body*/
-body {
-  box-sizing: border-box;
-  background-size: cover;
-  background-image: url(https://www.teknofilo.com/wp-content/uploads/2017/01/Minimalist-smartphone-wallpapers_021.jpg); }
+.Footer {
+  margin-top: 250px;
+  left: 10px;
+  bottom: 5px;
+  right: 10px;
+  width: 100%;
+  background-color: #808080;
+  opacity: 0.7;
+  color: #fff;
+  text-align: center;
+  font-family: 'Cinzel', serif; }
 
-/*menu*/
 .menuBar--color {
   background-color: #808080;
   background-image: linear-gradient(to left, #fff, #000); }
@@ -32,21 +37,14 @@ body {
         border-radius: 10px 50px / 50px;
         transition: all 0.4s ease; }
 
-/* fin del menu */
-/* Footer */
-.Footer {
-  margin-top: 250px;
-  left: 10px;
-  bottom: 5px;
-  right: 10px;
-  width: 100%;
-  background-color: #808080;
-  opacity: 0.7;
-  color: #fff;
-  text-align: center;
-  font-family: 'Cinzel', serif; }
+/*body*/
+body {
+  box-sizing: border-box;
+  background-size: cover;
+  background-image: url(https://www.teknofilo.com/wp-content/uploads/2017/01/Minimalist-smartphone-wallpapers_021.jpg); }
 
-/* fin del footer */
+/*menu*/
+/* fin del menu */
 .header__align--color {
   /*header*/
   background-color: #808080;
@@ -102,7 +100,7 @@ h5 {
 .gridMap--align {
   display: grid;
   background-image: url(https://images.squarespace-cdn.com/content/v1/54ec0fb3e4b0dc5d50410043/1570033416808-RD4GP44M53626GKNGTHY/fotografia-profesional-interiores-sala-comedor-apartamento-zarzamora.jpg?format=2500w);
-  grid-template-columns: 65% 35%; }
+  grid-template-columns: 50% 50%; }
   .gridMap--align .asesoramiento, .gridMap--align h2 {
     margin-left: 80px; }
   .gridMap--align .asesoramiento, .gridMap--align h2 p span {
@@ -262,15 +260,14 @@ h5 {
   justify-content: center;
   align-items: center;
   font-family: 'Quicksand', sans-serif;
-  font-size: 50px;
   text-decoration: underline 3px #000; }
   .catalogoEstilo ul li {
     cursor: pointer;
-    font-size: 30px;
+    font-size: 25px;
     list-style: none;
     padding: 10px; }
   .catalogoEstilo ul li strong {
-    font-size: 40px; }
+    font-size: 45px; }
 
 /* Slideshow container */
 .slideshow-container {
@@ -279,7 +276,7 @@ h5 {
   margin: auto; }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -293,11 +290,23 @@ h5 {
   border-radius: 0 3px 3px 0;
   user-select: none; }
 
-/* Position the "next button" to the right */
 .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
   right: 0;
   border-radius: 3px 0 0 3px; }
 
+/* Position the "next button" to the right */
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: #808080; }
@@ -343,7 +352,7 @@ h5 {
   text-align: center; }
 
 .carousel__img {
-  width: 100%; }
+  width: 700px; }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {

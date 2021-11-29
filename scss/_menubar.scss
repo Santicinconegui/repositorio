@@ -1,0 +1,29 @@
+.menuBar--color {   
+    background-color: $color3; 
+    background-image: linear-gradient(to left, $color2, $color1); 
+    ul {      
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+      list-style: none;
+      color: $color2;
+      font-family: 'Poppins', sans-serif;
+  
+      li {
+        width: 120px;
+        margin: 15px;
+        padding: 12px;
+  
+        a {
+          text-decoration: none;
+          color: $color2;
+        }
+  
+        &:hover {
+          background-color: $color1;
+          border-radius: 10px 50px / 50px;
+          transition: all 0.4s ease;
+        }
+      }
+    }
+  }  
