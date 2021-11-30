@@ -90,10 +90,11 @@
     display: grid;
     background-image: url(https://images.squarespace-cdn.com/content/v1/54ec0fb3e4b0dc5d50410043/1570033416808-RD4GP44M53626GKNGTHY/fotografia-profesional-interiores-sala-comedor-apartamento-zarzamora.jpg?format=2500w);
     grid-template-columns: 50% 50%;
+    padding: 10px;
     
   
     .asesoramiento, h2{
-      margin-left: 80px;
+      text-align: center;
     }
     .asesoramiento, h2 p span{       
         background-color:$color3;
@@ -109,8 +110,8 @@
     }
   }
 .iframe--size{
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }
   .divGm {
     border-style: solid;
@@ -436,5 +437,24 @@ ul li strong{
 @media (max-width:600px){
   .columnGaleria{
     flex: 100%;
+  }
+}
+@media (max-width:600px){
+  
+  .gridMap--align{
+    background-image: none;
+    display: block;
+    margin-left: 35px;
+   
+  .asesoramiento, h2{
+    text-align: center;
+    background-color: initial;
+  
+  }
+  }
+  .containerGrid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
