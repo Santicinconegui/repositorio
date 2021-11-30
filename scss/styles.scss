@@ -65,7 +65,7 @@
   
   .gridConteiner__align {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 1fr;
     
   
     div {
@@ -75,10 +75,10 @@
   
   .profesionales {
     text-align: center;
-    margin-top: 50px;
+    padding:30px;
   }
   
-  .divET {
+  .divEt {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
@@ -155,9 +155,7 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
-  .divTrabajo_img{
-    height:500px;
-  }
+
   }
   .containerNosotros{
     display: grid;
@@ -171,20 +169,21 @@
     color: $color1;
     padding: 20px;
     font-family: "Andada Pro", serif;
+   .cierreClientes{
+    font-size: 30px;
     display: flex;
-    flex-direction: column; 
-    justify-content: center;    
+    align-items: center;
+    justify-content: center;
+    text-decoration: overline underline #fff;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+  }     
   }
   .iframeNos{
     height: 50vh;
     width: 40vw;
   }
-  .cierreClientes{
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
-    padding: 10px;
-  }
+  
   
   .gridContact {
     display: grid;
@@ -200,10 +199,11 @@
       h1 {
         font-size: 45px;
         font-family: 'Noto Sans SC', sans-serif;
-        text-decoration: solid;
-        text-align: center;
-        margin-top: 100px;
-        margin-right: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
         padding: 20px;
       }
     }
@@ -211,33 +211,30 @@
   
   .spanContact {
     font-family: 'Noto Sans SC', sans-serif;
-    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .formContact {
-    margin-top: 50px;
-    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
   }
   
-  .divButton {
-    padding: 20px;
+  .divButton{
+    padding: 10px;
   }
   
   .textSub {
     font-family: font-family "Raleway", sans-serif;
     text-align: center;
     font-size: 20px;
-    margin-top: 60px;
     padding: 50px;
-    line-height: 30px;
   }
   
   .anuncio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 500px;
-    margin-right: 500px;
+    text-align: center; 
     padding: 50px;
   }
   
