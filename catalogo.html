@@ -57,30 +57,6 @@
         <li>Medidas</li>
         <li>Estilo</li>
       </ul>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 4</div>
-          <img src="img/Screenshot_3.png" class="carousel__img">
-          <div class="text">Estilo</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
-          <img src="img/Screenshot_4.png" class="carousel__img">
-          <div class="text">Terminación</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
-          <img src="img/Screenshot_2.png" class="carousel__img">
-          <div class="text">Color</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
-          <img src="img/Screenshot_5.png" class="carousel__img">
-          <div class="text">Medidas</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
       <br>
     </div>
     <hr>
@@ -110,42 +86,18 @@
         <img alt="photo 10" src="img-gallery/dormitorio3.jpg" class="gallery__img">
       </div>
     </div>
+    <br>
+    <br>
+    <div class="errorPag"> Para realizar tu pedido por WhatsApp, podes hacerlo desde aca </div>
+    <span class="iconWs">
+      <a href="error404.html">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </span>
     <footer>
       <!--inicio del footer-->
       <div class="Footer">2021 - Uma Interiores © Todos los derechos reservados.</div>
     </footer>
     <!--fin del footer-->
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1
-        }
-        if (n < 1) {
-          slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-    </script>
   </body>
 </html>

@@ -88,6 +88,10 @@ h5 {
   .gridConteiner__align div {
     color: #000; }
 
+.buttonEt a {
+  text-decoration: none;
+  color: #fff; }
+
 .profesionales {
   text-align: center;
   padding: 30px; }
@@ -211,6 +215,10 @@ h5 {
 .divButton {
   padding: 10px; }
 
+.divButton a {
+  text-decoration: none;
+  color: #fff; }
+
 .textSub {
   font-family: font-family "Raleway", sans-serif;
   text-align: center;
@@ -242,13 +250,6 @@ h5 {
   justify-content: center;
   gap: 15px; }
 
-@media (max-width: 767.98px) {
-  .SobreNosotros {
-    text-align: center;
-    font-size: 17px;
-    font-family: 'Andada Pro', serif;
-    line-height: 0.5; } }
-
 .catalogoEstilo {
   display: flex;
   flex-direction: column;
@@ -264,103 +265,12 @@ h5 {
   .catalogoEstilo ul li strong {
     font-size: 45px; }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto; }
-
-/* Next & previous buttons */
-.prev {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: #000;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none; }
-
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: #000;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-/* Position the "next button" to the right */
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #808080; }
-
-/* Caption text */
-.text {
-  color: #000;
-  font-size: 20px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center; }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #000;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0; }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s; }
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4; }
-  to {
-    opacity: 1; } }
-
-@keyframes fade {
-  from {
-    opacity: .4; }
-  to {
-    opacity: 1; } }
-
 .text-align--center {
   text-align: center; }
 
-.carousel__img {
-  width: 700px; }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next, .text {
-    font-size: 11px; } }
-
 .gallery__img {
   width: 100%;
-  margin-top: 5px;
   cursor: pointer; }
-
-.gallery__img:hover {
-  transform: scale(1.02); }
 
 .rowGaleria {
   display: flex;
@@ -374,15 +284,67 @@ h5 {
   .columnGaleria {
     flex: 100%; } }
 
-@media (max-width: 600px) {
-  .gridMap--align {
-    background-image: none;
-    display: block;
-    margin-left: 35px; }
-    .gridMap--align .asesoramiento, .gridMap--align h2 {
-      text-align: center;
-      background-color: initial; }
-  .containerGrid {
+.errorPag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px; }
+
+.iconWs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px; }
+  .iconWs .iconWs, .iconWs a {
+    text-decoration: none;
+    color: #000; }
+
+.iconWs a:hover {
+  background-color: #008008; }
+
+.errorPage {
+  background-color: #fff;
+  background-image: none;
+  font-family: 'Dosis', sans-serif; }
+
+.mensajeError {
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.containerError {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.redireccion {
+  font-size: 20px;
+  padding: 20px; }
+  .redireccion .redireccion ul, .redireccion li {
+    list-style: none;
+    padding: 15px; }
+  .redireccion .redireccion, .redireccion a {
+    text-decoration: none; }
+
+@media (max-width: 991.98px) {
+  .clientes {
+    background-color: inherit; }
+  .sobreNosotros {
+    padding: 15px; }
+  .containerNosotros {
+    background-color: none;
     display: flex;
-    flex-direction: column;
-    width: 100%; } }
+    flex-direction: column; }
+    .containerNosotros .iframeNos {
+      width: 100%; }
+  .containerError {
+    display: flex;
+    flex-direction: column; }
+    .containerError .homero {
+      width: 100%; }
+  .gridContact {
+    display: flex;
+    flex-direction: column-reverse; }
+  .gridConteiner__align {
+    display: flex;
+    flex-direction: column-reverse; } }
